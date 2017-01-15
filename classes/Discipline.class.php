@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Description of Discipline
  *
@@ -7,13 +8,15 @@
 require_once 'IDiscipline.class.php';
 
 class Discipline implements IDiscipline {
-    private $name;
-    
+
+    private $_name;
+
     function __construct($name) {
-        $this->name = $name;
+        $this->_name = $name;
     }
-    
+
     public function getName() {
-        return $this->name;
+        return $this->_name;
     }
+
 }

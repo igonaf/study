@@ -17,7 +17,7 @@ OUT;
     echo "<br/>";
 }
 
-function print_teacher_info(ITeacher $teacher) {
+function print_teacher_info(Teacher $teacher) {
     echo <<<OUT
     Преподаватель
     {$teacher->getName()} преподает предметы 

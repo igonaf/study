@@ -5,9 +5,11 @@
  *
  * @author igor
  */
-class Student {
 
-    private $_name;
+require_once 'Person.class.php';
+
+class Student extends Person {
+
     private $_age;
     private $_group;
 
@@ -42,15 +44,6 @@ class Student {
      */
     function getAge() {
         return $this->_age;
-    }
-
-    /**
-     * 	get name of the student
-     * 	
-     * 	@return string
-     */
-    function getName() {
-        return $this->_name;
     }
 
     /**

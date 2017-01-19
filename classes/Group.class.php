@@ -34,7 +34,7 @@ class Group implements IGroup {
      * 	
      * 	@param object $teacher - object of ITeacher or his children
      */
-    function addTeacher(ITeacher $teacher) {
+    function addTeacher(Teacher $teacher) {
         array_push($this->_teachers, $teacher);
     }
 

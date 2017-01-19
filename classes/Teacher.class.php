@@ -5,11 +5,10 @@
  *
  * @author igor
  */
-require_once 'ITeacher.class.php';
+require_once 'Person.class.php';
 
-class Teacher implements ITeacher {
+class Teacher extends Person {
 
-    private $_name;
     private $_discipline = [];
 
     function __construct($name, IDiscipline $discipline) {
@@ -54,10 +53,6 @@ class Teacher implements ITeacher {
      */
     public function getTheDesciplineOfTheTeacher($discipline_id) {
         echo "If discipline_id matches one in array then here should be a discipline's entry with id=" . $discipline_id;
-    }
-
-    public function getName() {
-        return $this->_name;
     }
 
 }

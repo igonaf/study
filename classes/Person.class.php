@@ -3,7 +3,7 @@
 /**
  * Description of Person
  *
- * @author icstime
+ * @author igor
  */
 abstract class Person {
     protected $_name;
